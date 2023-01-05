@@ -1,0 +1,67 @@
+2023년 중장기 목표 : 국내 저널 퍼블리쉬 (재무연구 혹은 증권학회지)
+
+- 1월 1일 ~ 2월 24일 
+
+국내 저널용 작업 마치기 : 
+
+1) 지주회사의 Discount 현상  
+  - 리터러쳐 리뷰 + 데이터 작업
+  - 리터러쳐 리뷰 (Close End Fund) 관련 항목 - Shelifer 책 + Richard Thaler (JPE) 페이퍼 까지 정리 
+  - 국내에서 다룬 지주회사 디스카운트 페이퍼 정리 
+  - 데이터 작업 : 공정거래위원회 자료 조사해서 연간 단위에서 자회사의 Market Cap 의 합이 지주회사보다 큰 경우를 찾아보기
+  
+2) Short Term Momentum 작업 
+  - Weekly / Biweekly 작업으로 진행해보기 
+  - Monthly 에서는 현재 상황으로서는 나오지 않고 있는 상황
+  - 선행연구 살펴봐서 이거 작업도 마치기 
+  
+3) Daily Winner Loser 을 Aggregate Volatility 에 대한 Factor Loading으로 설명하기 
+
+  - 현재까지 Daily winne Loser 전략은 다 만들어 놓은 상황
+  - FVKOSPI Factor 역시 만들어 둔 상황. 
+  - Spanning Test 만 잘 진행하면 오케이.
+  - Daily Winner Loser는 한국 사회의 복권수요와는 어떠한 연계성을 가지는지 체크할 것 
+  
+4) 1월 25일 호가단위 변화의 유동성 변화 효과 
+
+  - 위 페이퍼는 재무관리 연구 (2009). 안희준 (1996), Bollen (2006)까지 살펴볼 것 
+  - 엄찬영 교수님 페이퍼 다시 잘 읽어보고 데이터로 따라해보기. 
+  - 엄찬영 교수님께 메일 드려볼 것 
+  
+5) 한국 저널용 ETF Shortout standing 변화 찾고 Speculation Demand 따라하기 
+  - Shuan Davis 따라하기용임. (하연이)
+  
+  -----------------------------------------------------------------
+  
+국제 저널용 작업 진행 
+
+1) Abnormal Lottery Demand and Crypto Currency Trading
+   - Lottery Salary로부터 Abnormal Demand 구하기 
+   - 선행연구들과 같이 Substitution Effect가 강하게 나타나는 것인지, Complement로서 작동하는 것인지 체크할 것 
+   - Lottery Stock 이 늘어나고, Crypto 는 늘어나지 않는지 어떠한 연관성이 있는 것인지 체크할 것. 
+   - Cumulative Prospect Theory Paper 쥐잡듯 읽고, 
+   
+   
+2) Stochastic Discount Factor From Lottery Sales.
+  E[MR] = 1 ( under the P measure ) 
+  이를 이용해서 Lottery 1개 구입에 따른, 분포를 잡아낼 수 있고, 이를 바탕으로 각 Lottery 마다 SDF를 끄집어내기 
+  - 간단하게나마 Bayesian Methodology를 이용해서 분포 잡아내는 것 코딩해놓기 
+  
+3) Fund Flow Data and Economic Event 
+  -Economic Event를 앞두고 Mutual Fund 들이 어떻게 움직이는 가에 대한 페이퍼 
+  - 일단은 최재원 교수님 페이퍼를 거의 다 읽어보는 것이 좋을듯 하고 
+  - 데이터와 친숙해지는 작업을 할 것. // Binsbergen (2011) Appendix를 따라할 수 있다면 베스트겠지만, 블룸버그가 없으니까 
+  Stambaugh 방식의 데이터 클렌징 작업을 다 진행할 것
+  
+  
+4) Within Industry Reversal 
+  - Global Data로 되는지 확인할 것 -
+  - Global Industry 방식은 Jensen, Kelly and Pedersen 따라하고 
+  - 중요한 State Space Representation 코딩 연습하고 얼마든지 할 수 있도록 연마할 것. 
+  
+5) Passive Fund의 Abnormal Performance 
+
+  - 먼저 해야할 지점은, Replicate 정도 
+  
+   
+
