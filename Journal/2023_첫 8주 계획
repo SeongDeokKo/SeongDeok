@@ -10,6 +10,17 @@
   - 국내에서 다룬 지주회사 디스카운트 페이퍼 정리 
   - 데이터 작업 : 공정거래위원회 자료 조사해서 연간 단위에서 자회사의 Market Cap 의 합이 지주회사보다 큰 경우를 찾아보기
   
+  ----- (2023.01.02~ 2023.01.08)
+  - 지주회사의 시가총액이 실제로 작게 책정된다는 것을 확인함. 
+  
+  -----( 2023.01.09 ~ 2023. 01.15) 
+  - 08년, 09년, 10년 지주회사 데이터 정리하기 
+  
+  
+  
+  
+  
+  
 2) Short Term Momentum 작업 
   - Weekly / Biweekly 작업으로 진행해보기 
   - Monthly 에서는 현재 상황으로서는 나오지 않고 있는 상황
@@ -21,6 +32,16 @@
   - FVKOSPI Factor 역시 만들어 둔 상황. 
   - Spanning Test 만 잘 진행하면 오케이.
   - Daily Winner Loser는 한국 사회의 복권수요와는 어떠한 연계성을 가지는지 체크할 것 
+  
+  ---------------(1월 2일~ 1월 8일)
+  -- FVKOSPI Factor 로는 설명이 안되는 것 확인함. NMB Portfolio는 FF5 팩터로도 설명하지 못하는 것 역시 확인함. 
+  -- FVKOPSI 팩터가 MAX Return 역시 잘 설명하는 것인지 역시 불분명함. Barinov (2018)의 외표본 타당성 역시 좀 살펴볼 필요가 있음. 
+  
+  ---------------(1월 9일~ 1월 15일) 
+  - FVIX 팩터부터 다시 만들어보고 Ang et al (2006)의 테이블이 만들어지는지 체크할 것. 
+  - Barinov (2018)을 Replicate
+  
+  
   
 4) 1월 25일 호가단위 변화의 유동성 변화 효과 
 
@@ -40,6 +61,10 @@
    - 선행연구들과 같이 Substitution Effect가 강하게 나타나는 것인지, Complement로서 작동하는 것인지 체크할 것 
    - Lottery Stock 이 늘어나고, Crypto 는 늘어나지 않는지 어떠한 연관성이 있는 것인지 체크할 것. 
    - Cumulative Prospect Theory Paper 쥐잡듯 읽고, 
+   
+ -------데이터 입력하기 대부분 완료함. 
+ -2023.01.09 ~ 2023.01.15 
+ - Abnormal Lottery Demand 구하기 (각 연도별, 각 State 별 Population 컨트롤 해주기) 
    
    
 2) Stochastic Discount Factor From Lottery Sales.
