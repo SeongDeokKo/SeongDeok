@@ -1,0 +1,20 @@
+결과 보고드린 것 : 
+
+Alpha & (Alpha / IVOL) 로 얼마만큼의 주식들이 Distribution 바깥으로 나가있는지를 체크
+
+- Alpha 의 두 가지 원천 
+
+1) Price Alignment 
+2) Comovement (Replication) 
+
+알파로만 보면 꽤 많은 국가들이 미국을 기준으로 할 때, 전혀 바깥으로 나가지 않거나 혹은 완전히 바깥으로 나가있는 것이 뚜렷하게 보임. 
+
+- Alpha 를 통해서는 <Country Specific (Local) Factor > 에 의해서 주로 작동되는 팩터들에 대해서 생각할 수 있음. 
+
+알파를 기준으로 완전히 바깥으로 나가있는 주식들을 기록하고 이 주식들을 가지고 
+
+예) 미국 기준 바깥으로 나가있는 한국 주식이 200개라면 200개를 적절히 포트폴리오로 만든 다음 이 포트폴리오를 Pricing 하는 SDF를 추출. 
+
+그리고 이 SDF로 다시 Individual (한국 주식 중 가격결정이 잘 안되는 주식) 주식을 Pricing 해보고 얼마만큼 잘 Pricing 되는지 체크 
+
+만약 이런 SDF 로 잘 Pricing이 된다면, USA오,는 또다른 Local Factor가 존재한다는 것을 의미
