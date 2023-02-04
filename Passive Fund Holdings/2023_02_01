@@ -31,3 +31,44 @@
   이것까지 마치고 일단은 WFICN이 있는 파일과 합쳐주기로 함. 
   
   -
+
+
+
+A) Crane and Crotty  따라서 Index_Fund Identify 
+
+A-1) MFLInks 이용해서 TR S12와 CRSP를 합쳐준다. 
+A-2) 2008년 이후에 있어서 WFICN으로 으로 합쳐지지 않는 것은 CRSP_CL_GRP로 합쳐준다. 
+A-3) 최종 : GROUP = ifelse( !is.na(WFICN), WFICN , CRSP_CL_GRP) 
+
+A-4) CRSP_Fund_Summary 에 있는 Index_Fund_FLAG = "D" 인 것을 이용함. 
+
+A-5) Equity Fund Identification 
+
+ - Lipper Asset Code : MB (Tax Free Fixed Income) , TX : Taxed Fixed Income 제외함. 
+  - 그 중에서 Lipper Objective Code 를 참고해서 IUG, IID, A,BBB 채권 추려내고 
+  - Wisben Code 이용해서 GOV, CHY, CBD, MBD , MHY , MSS 걸러냄
+  - Si 코드 이용해서 CGN, CHQ, CIM, CSM, GGN, GIM , GSM 걸러냄. 
+  - CRSP Objective Code가 E로 시작하지 않는 것 걸러냄. 
+  
+이렇게 하면 충분할 듯.
+
+A-6)
+
+GROUP 변수 만들어 놓은 것으로 TNA, RETURN, EXPENSE를 합쳐준다. 
+TNA는 그냥 Cross Sectioanl Sum, 
+비용, 수익률은 Lag_TNA 를 기준으로 해서 Weighted Average를 진행한다. 
+
+A-7) GROUP 별 Holding 매핑하기 
+
+A-7-1) GROUP 중 WFICN 변수가 존재하는 경우에는 TR S12 Type3 를 이용하고 이거를 CRSP 랑 합쳐주기 
+
+GROUP이 CRSP_CL_GRP 로 되어 있는 경우에는 Portfolio Mapping 변수를 이용함. 
+
+
+A-8) 필터링
+
+Aggregation을 통해서 구한 TNA 값이 Crane Crotty 따라서 5 Million이 안되는 경우에는 제외시키고 
+
+
+
+
