@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" fill="none">
+  <rect width="480" height="480" rx="24" fill="#EAF3FF"/>
+  <circle cx="240" cy="180" r="90" fill="#A0B9D9"/>
+  <rect x="95" y="290" width="290" height="130" rx="65" fill="#A0B9D9"/>
+  <text x="240" y="450" text-anchor="middle" fill="#3D5A80" font-family="sans-serif" font-size="24">Replace with profile.jpg</text>
+</svg>

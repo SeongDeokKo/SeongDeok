@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeongDeok | Personal Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <a href="#research">Research</a>
+      </nav>
+
+      <div class="hero-content container" id="about">
+        <img class="profile-image" src="assets/profile.jpg" alt="SeongDeok profile photo" onerror="this.onerror=null;this.src='assets/profile-placeholder.svg';" />
+        <div>
+          <p class="greeting">Hello,</p>
+          <h1>I am SeongDeok.</h1>
+          <p class="intro">
+            I study topics in finance and economics and use data-driven methods to analyze markets and institutions.
+            On this homepage, you can find my introduction, CV, and current research.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="cv" class="card">
+        <h2>Curriculum Vitae</h2>
+        <p>Click the button below to view my latest CV.</p>
+        <a class="button" href="11.17.pdf" target="_blank" rel="noopener noreferrer">Open CV (PDF)</a>
+      </section>
+
+      <section id="research" class="card">
+        <h2>Research</h2>
+
+        <div class="research-grid">
+          <article>
+            <h3>Publications</h3>
+            <ul>
+              <li>
+                <strong>Publication Title 1</strong> (Year) — Co-author Name<br />
+                <span class="meta">Journal Name, Vol(Issue), pages.</span>
+              </li>
+              <li>
+                <strong>Publication Title 2</strong> (Year) — Co-author Name<br />
+                <span class="meta">Journal Name, Vol(Issue), pages.</span>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Working Papers</h3>
+            <ul>
+              <li>
+                <strong>Working Paper Title 1</strong> (In Progress)<br />
+                <span class="meta">Add an abstract or short description here.</span>
+              </li>
+              <li>
+                <strong>Working Paper Title 2</strong> (Preparing for Submission)<br />
+                <span class="meta">Add an abstract or short description here.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> SeongDeok. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
