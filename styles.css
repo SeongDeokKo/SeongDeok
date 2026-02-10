@@ -56,3 +56,19 @@
   margin: 10px 0 0 0;
   line-height: 1.6;
 }
+
+
+.paper-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.paper-links a {
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
