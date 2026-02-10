@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | SeongDeok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="subpage-header">
+      <nav class="nav container">
+        <a href="index.html">Home</a>
+        <a href="cv.html" aria-current="page">CV</a>
+        <a href="research.html">Research</a>
+      </nav>
+      <div class="container page-title-wrap">
+        <h1 class="page-title">Curriculum Vitae</h1>
+        <p class="intro">You can view or download my latest CV using the link below.</p>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <section class="card">
+        <h2>Latest Version</h2>
+        <p>If your browser does not open the PDF, right-click and save the file.</p>
+        <a class="button" href="11.17.pdf" target="_blank" rel="noopener noreferrer">Open CV (PDF)</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> SeongDeok. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
