@@ -1,70 +1,82 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research | SeongDeok</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="subpage-header">
-      <nav class="nav container">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="research.html" aria-current="page">Research</a>
-      </nav>
-      <div class="container page-title-wrap">
-        <h1 class="page-title">Research</h1>
-        <p class="intro">Selected publications and current working papers.</p>
-      </div>
-    </header>
+<article>
+  <h2>Publications</h2>
 
-    <main class="container page-main">
-      <section class="card">
-        <div class="research-grid">
-          <article>
-            <h2>Publications</h2>
-            <ul>
-              <li>
-                <strong>Publication Title 1</strong> (Year) — Co-author Name<br />
-                <span class="meta">Journal Name, Vol(Issue), pages.</span>
-              </li>
-              <li>
-                <strong>Publication Title 2</strong> (Year) — Co-author Name<br />
-                <span class="meta">Journal Name, Vol(Issue), pages.</span>
-              </li>
-            </ul>
-          </article>
+  <article class="paper">
+    <h3 class="paper-title">
+      Characteristics-based reversals: Exploiting the gap between predicted and realized returns
+    </h3>
+    <p class="paper-authors">Seongdeok Ko</p>
+    <p class="paper-venue meta">
+      Finance Research Letters, Volume 85 (Part C), November 2025, Article 108081
+    </p>
 
-          <article>
-            <h2>Working Papers</h2>
-            <ul>
-              <li>
-                <strong>Working Paper Title 1</strong> (In Progress)<br />
-                <span class="meta">Add an abstract or short description here.</span>
-              </li>
-              <li>
-                <strong>Working Paper Title 2</strong> (Preparing for Submission)<br />
-                <span class="meta">Add an abstract or short description here.</span>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </section>
-    </main>
+    <div class="paper-links">
+      <a
+        href="https://www.sciencedirect.com/science/article/pii/S1544612325013388"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ScienceDirect
+      </a>
+      <a
+        href="https://doi.org/10.1016/j.frl.2025.108081"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        DOI
+      </a>
+    </div>
 
-    <footer>
-      <p>© <span id="year"></span> SeongDeok. All rights reserved.</p>
-    </footer>
+    <details class="paper-abstract">
+      <summary>Abstract</summary>
+      <p>
+        This paper studies short-term return reversals implied by the mismatch between
+        characteristic-predicted return ranks and realized return ranks. A long–short strategy
+        exploiting large decile-level divergences earns strong gross returns, but profitability
+        is concentrated in small, illiquid, high-volatility stocks where transaction costs
+        meaningfully limit implementability. A within-industry peer-based refinement improves
+        net performance by filtering noise and targeting more comparable firms.
+      </p>
+    </details>
+  </article>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
-</html>
+  <article class="paper">
+    <h3 class="paper-title">
+      Market anticipation and intraday trading: Evidence from BOJ ETF purchases☆
+    </h3>
+    <p class="paper-authors">Seongdeok Ko</p>
+    <p class="paper-venue meta">
+      Finance Research Letters, Volume 91, March 2026, Article 109421
+    </p>
+
+    <div class="paper-links">
+      <a
+        href="https://www.sciencedirect.com/science/article/pii/S1544612325026704"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ScienceDirect
+      </a>
+      <a
+        href="https://doi.org/10.1016/j.frl.2025.109421"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        DOI
+      </a>
+    </div>
+
+    <details class="paper-abstract">
+      <summary>Abstract</summary>
+      <p>
+        Using :contentReference[oaicite:2]{index=2} ETF purchases as a natural experiment,
+        the paper shows that when interventions are predictable, trading volume in Nikkei 225 futures
+        spikes during the lunch break—when the cash market is closed—while prices remain stable.
+        The effect appears across both :contentReference[oaicite:3]{index=3} and
+        :contentReference[oaicite:4]{index=4} listings, consistent with
+        cross-market transmission. Overall, anticipated policy support is absorbed mainly through
+        execution and liquidity behavior rather than immediate price adjustment.
+      </p>
+    </details>
+  </article>
+</article>
