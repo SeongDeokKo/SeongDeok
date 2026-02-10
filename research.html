@@ -1,70 +1,61 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research | SeongDeok</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="subpage-header">
-      <nav class="nav container">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="research.html" aria-current="page">Research</a>
-      </nav>
-      <div class="container page-title-wrap">
-        <h1 class="page-title">Research</h1>
-        <p class="intro">Selected publications and current working papers.</p>
-      </div>
-    </header>
+<main class="container page-main">
+  <section class="card">
+    <section class="research-section">
+      <h2>Publications</h2>
 
-    <main class="container page-main">
-      <section class="card">
-        <div class="research-grid">
-          <article>
-            <h2>Publications</h2>
-            <ul>
-              <li>
-                <strong>Publication Title 1</strong> (Year) — Co-author Name<br />
-                <span class="meta">Journal Name, Vol(Issue), pages.</span>
-              </li>
-              <li>
-                <strong>Publication Title 2</strong> (Year) — Co-author Name<br />
-                <span class="meta">Journal Name, Vol(Issue), pages.</span>
-              </li>
-            </ul>
-          </article>
+      <article class="paper">
+        <h3 class="paper-title">Publication Title 1</h3>
+        <p class="paper-authors">Co-author Name</p>
+        <p class="paper-venue meta">Journal Name, Vol(Issue), pages. (Year)</p>
 
-          <article>
-            <h2>Working Papers</h2>
-            <ul>
-              <li>
-                <strong>Working Paper Title 1</strong> (In Progress)<br />
-                <span class="meta">Add an abstract or short description here.</span>
-              </li>
-              <li>
-                <strong>Working Paper Title 2</strong> (Preparing for Submission)<br />
-                <span class="meta">Add an abstract or short description here.</span>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </section>
-    </main>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>
+            Add your abstract here. This can be 3–7 lines, or longer if you want.
+          </p>
+        </details>
+      </article>
 
-    <footer>
-      <p>© <span id="year"></span> SeongDeok. All rights reserved.</p>
-    </footer>
+      <article class="paper">
+        <h3 class="paper-title">Publication Title 2</h3>
+        <p class="paper-authors">Co-author Name</p>
+        <p class="paper-venue meta">Journal Name, Vol(Issue), pages. (Year)</p>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
-</html>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>
+            Add your abstract here.
+          </p>
+        </details>
+      </article>
+    </section>
+
+    <section class="research-section">
+      <h2>Working Papers</h2>
+
+      <article class="paper">
+        <h3 class="paper-title">Working Paper Title 1</h3>
+        <p class="paper-status meta">(In Progress)</p>
+
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>
+            Add an abstract or short description here.
+          </p>
+        </details>
+      </article>
+
+      <article class="paper">
+        <h3 class="paper-title">Working Paper Title 2</h3>
+        <p class="paper-status meta">(Preparing for Submission)</p>
+
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>
+            Add an abstract or short description here.
+          </p>
+        </details>
+      </article>
+    </section>
+  </section>
+</main>
