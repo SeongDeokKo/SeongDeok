@@ -1,43 +1,82 @@
-/* Research page: stack sections vertically */
+/* 전체 레이아웃 설정 */
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* Research 섹션 컨테이너 */
 .research-section {
+  max-width: 850px;
+  margin: 0 auto 28px auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 28px;
+  gap: 20px;
 }
 
 .research-section h2 {
-  margin: 0 0 8px 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
 }
 
-/* Each paper card-ish row */
+/* 각 논문 카드 */
 .paper {
-  padding: 14px 16px;
+  padding: 20px 24px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  background: #fff;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.paper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #2563eb;
 }
 
 .paper-title {
-  margin: 0 0 6px 0;
-  font-size: 1.05rem;
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
 }
 
-.paper-authors,
-.paper-status,
+.paper-authors {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  color: #2563eb; /* 저자 강조색 */
+}
+
 .paper-venue {
-  margin: 0 0 6px 0;
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-style: italic;
 }
 
-/* Abstract toggle */
+/* Abstract 토글 (Summary 스타일) */
 .paper-abstract {
-  margin-top: 10px;
+  margin-top: 12px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 12px;
 }
 
 .paper-abstract summary {
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4b5563;
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .paper-abstract summary::-webkit-details-marker {
@@ -45,30 +84,43 @@
 }
 
 .paper-abstract summary::before {
-  content: "▸ ";
+  content: "▸";
+  margin-right: 8px;
+  transition: transform 0.2s;
 }
 
 .paper-abstract[open] summary::before {
-  content: "▾ ";
+  content: "▾";
 }
 
 .paper-abstract p {
   margin: 10px 0 0 0;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  color: #374151;
 }
 
-
+/* 링크 버튼 디자인 */
 .paper-links {
   display: flex;
-  gap: 10px;
-  margin-top: 6px;
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .paper-links a {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 600;
   text-decoration: none;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s;
 }
 
 .paper-links a:hover {
-  text-decoration: underline;
+  background: #2563eb;
+  color: #ffffff;
 }
